@@ -1,0 +1,14 @@
+# Check the version
+ruby -v
+
+# One line script
+ruby -e 'puts "hello world"'
+
+# Store the script
+echo "puts 'hello world'" > hello.rb
+ruby hello.rb
+
+# Replace "foo" to "bar" in all files with extension c & h, backup the original one in .bak files
+ruby -i.bak -pe 'sub "foo", "bar"' *.[ch]
+
+ruby -pe 0 getstarted.txt
